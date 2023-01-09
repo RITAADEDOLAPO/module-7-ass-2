@@ -6,9 +6,12 @@
 .page-wrapper{
     line-height: 30px;
     font-size: 18px;
+    max-width: 1440px;
+    position: relative;
 }
 .section-one{
     border-bottom: 1px solid #cccccc;
+    /*position: relative;*/
 }
 .googlelogo{
     width: 90px;
@@ -31,21 +34,59 @@
     padding-left: 10px;
     outline: none;
 }
+.input-field-icons{
+    display: flex;
+    margin-top: 10px;
+}
 .input-field-icons i{
-    margin: 7px;
-    color: linear-gradient(to right, blue, red);
+    margin-right: 6px;
+    height: 37px;
+    padding-right: 15px;
+    padding-top: 8px;
+    font-size: 20px;
+    border-right: 1px solid #cccccc;
+}
+.cammic{
+    display: flex;
+}
+.cammic img{
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+.mypic{
+    width: 33px;
+    height: 30px;
+    border-radius: 50%;
+}
+.gridimg{
+    width: 20px;
+    height: 25px;
+    padding-top: 5px;
+}
+.input-right{
+    padding-top: 25px;
+    margin-left: 330px;
+    display: flex;
+}
+.input-right div{
+    margin-right: 20px;
 }
 .line-one{
     display: flex;
     flex-direction: row;
+    position: sticky;
+    top: -18px;
+    z-index: 1;
+    background: #fff;
 }
 .top-icons{
     display: flex;
     justify-content: space-between;
     width: 650px;
     margin-left: 80px;
-    margin-bottom: 8px;
     font-size: 16px;
+    color: #5f6368;
 }
 .top-icons-left ul{
     display: flex;
@@ -66,9 +107,8 @@ hr{
     margin: 0px 80px;
 }
 .search{
-    color: #bbbbbb;
+    color: #5f6368;
     font-size: 15px;
-    font-weight: bold;
     margin: 10px 0px 20px 0px;
 }
 .Lionel{
@@ -137,6 +177,13 @@ hr{
     background: #fff;
     border-radius: 15px;
     margin-right: 20px;
+}
+.col-2 i{
+    position: absolute;
+    top: 19.5rem;
+    right: 29rem;
+    font-size: 35px;
+    color: white; 
 }
 .col-2 p{
     padding: 0px 10px;
@@ -207,7 +254,6 @@ hr{
     line-height: 25px;
     border-top: 1px solid #cccccc;
     padding-top: 15px;
-    
 }
 .stories-img{
     width: 100px;
@@ -228,9 +274,14 @@ hr{
 .stories-left{
     padding-right: 10px;
 }
+.stories-left a{
+    text-decoration: none;
+}
+.stories-left a:hover{
+    text-decoration: underline;
+}
 /*images*/
 .big-pic{
-    /*width: 340px;*/
     height: 200px;
     border-radius: 20px;
 }
@@ -373,16 +424,73 @@ hr{
 .videos-news span{
     color: #797575;
 }
-.play-icon{
+.play-icon1{
     position: absolute;
-    top: 20px;
+    bottom: 130.5rem;
+    left: 130px;
+    color: white;
+}
+.minute1{
+    position: absolute;
+    bottom: 129.3rem;
+    color: #fff;
+    margin-left: 4px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.play-icon2{
+    position: absolute;
+    bottom: 124.5rem;
+    left: 130px;
+    color: white;
+}
+.minute2{
+    position: absolute;
+    bottom: 123rem;
+    color: #fff;
+    margin-left: 4px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.play-icon3{
+    position: absolute;
+    bottom: 118.5rem;
+    left: 130px;
+    color: white;
+}
+.minute3{
+    position: absolute;
+    bottom: 117rem;
+    color: #fff;
+    margin-left: 4px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.5);
 }
 .view-all{
     text-align: center;
     width: 40%;
-    background: #797575;
+    background: #ecebeb;
     margin-top: 20px;
+    margin-left: 160px;
     border-radius: 20px;
+}
+.section-related-search h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.section-related-search i{
+    color: #797575;
+    font-size: 20px;
 }
 /*section 4*/
 .section-four{
@@ -392,7 +500,7 @@ hr{
     list-style-type: none;
 }
 .section-four ul li{
-    background-color: #cccccc;
+    background-color: #ecebeb;
     margin: 10px 20px 2px 0;
     padding: 7px;
     border-radius: 30px;
@@ -410,6 +518,9 @@ hr{
     margin-left: 30px;
     padding-left: 20px;
     font-size: 16px;
+}
+.aboutnone{
+    display: none;
 }
 .born{
     font-weight: bold;
@@ -456,6 +567,9 @@ th{
 }
 th{
     text-align: left;
+}
+.about table tr{
+    border-bottom: 1px solid #cccccc;
 }
 .profiles{
     font-size: 20px;
@@ -508,7 +622,59 @@ th{
     border-radius: 20px;
     background: #ecebeb;
 }
-
+.relwrapper{
+    display: flex;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    padding-top: 6px;
+}
+.rel-wrapper{
+    margin-bottom: 30px;
+}
+.relwrapper img{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-right: 12px;
+}
+.foot{
+    display: block;
+    width: 45%;
+    margin-left: auto;
+    margin-top: 45px;
+    margin-right: auto;
+}
+footer{
+    background: #ecebeb;
+    font-size: 16px;
+}
+.unordered{
+    padding: 10px 80px;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 25px;
+    color: #70757a;
+}
+.nigerabk{
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    padding: 14px 0 6px 80px;
+    color: #70757a;
+}
+.nigerabk .based{
+    color: blue;
+}
+.nigerabk .abk{
+    font-weight: bold;
+}
+.niger{
+    border-right: 1px solid #cccccc;
+    margin-right: 15px;
+    padding-right: 10px;
+}
 
 
 
@@ -526,6 +692,12 @@ th{
         margin-left: auto;
         margin-right: auto;
     }
+    .cammic{
+        display: none;
+    }
+    .input-right{
+        display: none;
+    }
     .googlelogo{
         margin: 15px 0 3px 130px;
     }
@@ -534,18 +706,75 @@ th{
         margin-top: 0;
         margin-left: 8px;
         margin-bottom: 12px;
-        box-shadow: none;
-        background: #cccccc;
+        /*box-shadow: none;*/
+        background: #fff;
     }
     .input-field input{
-        background: #cccccc;
+        background: #fff;
     }
-    
     .top-icons{
         margin-left: 10px;
     }
+    .top-icons-right{
+        display: none;
+    }
     .flex-container{
         display: none;
+    }
+    .stories{
+        display: block;
+    }
+    .stories-left{
+        display: block;
+        width: 355px;
+    }
+    .hitsandmiss, .renew-psg{
+        border: 1px solid #cccccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    .stories-right{
+        display: flex;
+        padding: 0;
+        margin: 10px 0;
+        border-left: none;
+
+    }
+    .th-game,.bizzare-record,.best-fifa{
+        font-size: 15px;
+        width: 300px;
+        height: 120px;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+    
+        line-height: 17px;
+    }
+    .also{
+        width: fit-content;
+        border-top: none;
+    }
+    .gary{
+        border-right: none;
+    }
+    .gary,.copa{
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+    }
+    .gary p,.copa p{
+        font-size: 15px;
+        line-height: 17px
+    }
+    .about{
+        display: none;
+    }
+    .aboutnone{
+        display: block;
+        width: 355px;
     }
     .section-two{
         margin-left: 0;
@@ -610,6 +839,19 @@ th{
     }
     .videos-news{
         margin-top: 1px;
+    }
+    .play-icon1{
+        bottom: 142.5rem;
+        
+        color: black;
+    }
+    .play-icon2{
+        bottom: 125rem;
+        color: black;
+    }
+    .play-icon3{
+        bottom: 124rem;
+        color: black;
     }
     .view-all{
         width: 354px;
