@@ -852,23 +852,25 @@ footer ul li{
         margin-top: 1px;
     }
     .play-icon1{
-        bottom: 130rem;
+        bottom: 140rem;
         left: 3rem;
         color: white;
     }
     .play-icon2{
-        bottom: 125rem;
+        bottom: 134.7rem;
         left: 3rem;
         color: white;
+        z-index: 1;
     }
     .play-icon3{
-        bottom: 120rem;
+        bottom: 129.8rem;
         left: 3rem;
         color: white;
+        z-index: 1;
     }
     .minute1{
         position: absolute;
-        bottom: 129rem;
+        bottom: 139.1rem;
         color: #fff;
         margin-left: 4px;
         width: fit-content;
@@ -879,7 +881,7 @@ footer ul li{
     }
     .minute2{
         position: absolute;
-        bottom: 124rem;
+        bottom: 134rem;
         color: #fff;
         margin-left: 4px;
         width: fit-content;
@@ -890,7 +892,7 @@ footer ul li{
     }
     .minute3{
         position: absolute;
-        bottom: 119rem;
+        bottom: 129rem;
         color: #fff;
         margin-left: 4px;
         width: fit-content;
